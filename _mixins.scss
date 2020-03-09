@@ -1,0 +1,47 @@
+// ============================================================================================= //
+//                                            MIXINS                                             //
+// ============================================================================================= //
+
+@use "sass:string";
+@use "./variables";
+
+@mixin breakpoint($min-width: false, $max-width: false, $parent: false) {
+
+    @if $parent and (string.slice($parent, 1, 1) != ".") and (string.slice($parent, 1, 1) != "#") {
+        @error "The \"#{$parent}\" selector need to be ID or class.";
+    }
+
+    @if $min-width {
+        @if $max-width {
+            @media all and (min-width: $min-width) and (max-width: $max-width - 1) {
+                @if $parent {
+                    #{$parent} & {
+                        @content;
+                    }
+                } @else {
+                    @content;
+                }
+            }
+        } @else {
+            @media all and (min-width: $min-width) {
+                @if $parent {
+                    #{$parent} & {
+                        @content;
+                    }
+                } @else {
+                    @content;
+                }
+            }
+        }
+    } @else if $max-width {
+        @media all and (max-width: $max-width - 1) {
+            @if $parent {
+                #{$parent} & {
+                    @content;
+                }
+            } @else {
+                @content;
+            }
+        }
+    }
+}
