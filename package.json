@@ -1,0 +1,33 @@
+{
+    "name": "@sass-collective/sass-breakpoint",
+    "version": "1.0.0",
+    "description": "Generate CSS breakpoint.",
+    "main": "index.scss",
+    "scripts": {},
+    "engines": {
+        "node": ">=10.0.0",
+        "npm": ">=6.0.0"
+    },
+    "devDependencies": {},
+    "dependencies": {
+        "sass": "^1.26.2"
+    },
+    "files": [
+        "*.scss"
+    ],
+    "keywords": [
+        "css",
+        "sass",
+        "front-end"
+    ],
+    "author": "The Sass Collective Authors",
+    "license": "MIT",
+    "homepage": "https://github.com/sass-collective/sass-breakpoint",
+    "bugs": {
+        "url": "https://github.com/sass-collective/sass-breakpoint/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/sass-collective/sass-rem.git"
+    }
+}
