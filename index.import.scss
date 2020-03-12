@@ -2,5 +2,5 @@
 //                                        SASS BREAKPOINT                                        //
 // ============================================================================================= //
 
-@forward "./variables";
-@forward "./mixins";
+@forward "./variables" as sass-breakpoint-*;
+@forward "./mixins" as sass-*;
