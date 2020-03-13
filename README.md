@@ -24,13 +24,14 @@ breakpoint($min-width, $max-width, $parent);
 
 ### Variables
 
-| Names              | Values    | Screens References          |
-| ------------------ | --------- | --------------------------- |
-| ``$very-small``    | 320       | iPhone in portrait mode     |
-| ``$small``         | 480       | iPhone in landscape mode    |
-| ``$medium``        | 768       | iPad in portrait mode       |
-| ``$large``         | 960       | Desktop                     |
-| ``$wide``          | 1200      | Wide screen                 |
+| Names              | Values    | Descriptions                                                         |
+| ------------------ | --------- | -------------------------------------------------------------------- |
+| ``$strict``        | true      | Subtract ``1px`` on ``max-width`` value, ``960px`` come ``959px``    |
+| ``$very-small``    | 320       | iPhone in portrait mode                                              |
+| ``$small``         | 480       | iPhone in landscape mode                                             |
+| ``$medium``        | 768       | iPad in portrait mode                                                |
+| ``$large``         | 960       | Desktop                                                              |
+| ``$wide``          | 1200      | Wide screen                                                          |
 
 ### Update default variables in global
 
