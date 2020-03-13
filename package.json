@@ -10,7 +10,7 @@
     },
     "devDependencies": {},
     "dependencies": {
-        "sass": "^1.26.2"
+        "sass": "^1.26.3"
     },
     "files": [
         "*.scss"
@@ -29,6 +29,6 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/sass-collective/sass-rem.git"
+        "url": "git+https://github.com/sass-collective/sass-breakpoint.git"
     }
 }
