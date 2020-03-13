@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+## [v1.0.1 (2020-03-13)](https://github.com/sass-collective/sass-rem/compare/v1.0.0...v1.0.1)
+
+### Fixed
+
+* Fixed ``package.json`` issue
+
 ## v1.0.0 (2020-03-13)
 
 * Initial release
