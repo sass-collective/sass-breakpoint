@@ -1,7 +1,5 @@
 // ============================================================================================= //
-//                                        SASS BREAKPOINT                                        //
+//                                            IMPORTS                                            //
 // ============================================================================================= //
 
-@forward "./variables" as sass-breakpoint-*;
-@forward "./functions" as sass-breakpoint-*;
-@forward "./mixins" as sass-*;
+@forward "./index" as sass-*;
