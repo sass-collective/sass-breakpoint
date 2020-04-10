@@ -2,16 +2,26 @@
 //                                           FUNCTIONS                                           //
 // ============================================================================================= //
 
+@use "sass:math";
+@use "sass:meta";
 @use "./variables";
 
 @function set-value($value) {
-    @return ($value * 1px);
+    @return (_strip-unit($value) * 1px);
 }
 
 @function set-value-has-strict($value) {
     @if variables.$strict {
-        @return set-value($value) - 1;
+        @return set-value(_strip-unit($value)) - 1;
     } @else {
-        @return set-value($value);
+        @return set-value(_strip-unit($value));
     }
+}
+
+@function _strip-unit($value) {
+    @if meta.type-of($value) == "number" and not math.is-unitless($value) {
+        @return $value / ($value * 0 + 1);
+    }
+
+    @return $value;
 }
