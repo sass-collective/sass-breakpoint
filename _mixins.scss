@@ -5,17 +5,17 @@
 @use "sass:string";
 @use "./functions";
 
-@mixin breakpoint($min-width: false, $max-width: false, $parent: false) {
+@mixin breakpoint($min-width: false, $max-width: false, $root-selector: false) {
 
-    @if $parent and (string.slice($parent, 1, 1) != ".") and (string.slice($parent, 1, 1) != "#") {
-        @error "The \"#{$parent}\" selector need to be ID or class.";
+    @if $root-selector and (string.slice($root-selector, 1, 1) != ".") and (string.slice($root-selector, 1, 1) != "#") {
+        @error "The \"#{$root-selector}\" selector need to be ID or class.";
     }
 
     @if $min-width {
         @if $max-width {
             @media all and (min-width: functions.set-value($min-width)) and (max-width: functions.set-value-has-strict($max-width)) {
-                @if $parent {
-                    #{$parent} & {
+                @if $root-selector {
+                    #{$root-selector} & {
                         @content;
                     }
                 } @else {
@@ -24,8 +24,8 @@
             }
         } @else {
             @media all and (min-width: functions.set-value($min-width)) {
-                @if $parent {
-                    #{$parent} & {
+                @if $root-selector {
+                    #{$root-selector} & {
                         @content;
                     }
                 } @else {
@@ -35,8 +35,8 @@
         }
     } @else if $max-width {
         @media all and (max-width: functions.set-value-has-strict($max-width)) {
-            @if $parent {
-                #{$parent} & {
+            @if $root-selector {
+                #{$root-selector} & {
                     @content;
                 }
             } @else {

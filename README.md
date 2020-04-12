@@ -19,7 +19,7 @@ Generate CSS breakpoint.
 ### Mixin
 
 ```scss
-breakpoint($min-width, $max-width, $parent);
+breakpoint($min-width, $max-width, $root-selector);
 ```
 
 ### Variables
@@ -65,7 +65,7 @@ body {
     }
 
     // Parent class or ID
-    @include sass-breakpoint.breakpoint(480, $parent: '.class') {
+    @include sass-breakpoint.breakpoint(480, $root-selector: '.class') {
         font-size: 10px;
     }
 }
@@ -95,7 +95,7 @@ body {
     }
 
     // Parent class or ID
-    @include sass-breakpoint(480, $parent: '.class') {
+    @include sass-breakpoint(480, $root-selector: '.class') {
         font-size: 10px;
     }
 }
