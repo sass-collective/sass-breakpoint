@@ -10,7 +10,7 @@
     },
     "devDependencies": {},
     "dependencies": {
-        "@sass-collective/strip-unit": "^1.0.0",
+        "@sass-collective/strip-unit": "^1.0.1",
         "sass": "^1.26.3"
     },
     "files": [
