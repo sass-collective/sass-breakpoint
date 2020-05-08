@@ -1,6 +1,6 @@
 {
     "name": "@sass-collective/sass-breakpoint",
-    "version": "1.3.0",
+    "version": "1.3.1",
     "description": "Generate CSS breakpoint.",
     "main": "index.scss",
     "scripts": {},
@@ -19,6 +19,7 @@
     "keywords": [
         "css",
         "sass",
+        "module system",
         "breakpoint",
         "front-end"
     ],
