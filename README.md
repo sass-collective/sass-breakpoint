@@ -1,6 +1,6 @@
 # Sass Breakpoint
 
-![Sass Breakpoint](.repo/banner.png)
+![Sass Breakpoint](.github/banner.png)
 
 [![Version](https://flat.badgen.net/npm/v/@sass-collective/sass-breakpoint)](https://www.npmjs.com/package/@sass-collective/sass-breakpoint)
 [![Download](https://flat.badgen.net/npm/dt/@sass-collective/sass-breakpoint)](https://www.npmjs.com/package/@sass-collective/sass-breakpoint)
