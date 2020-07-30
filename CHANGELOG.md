@@ -2,6 +2,13 @@
 
 ## Unreleased
 
+## [v1.4.0 (2020-07-30)](https://github.com/sass-collective/sass-breakpoint/compare/v1.3.2...v1.4.0)
+
+### Changed
+
+* Changed ``@sass-collective/strip-unit`` to ``1.2.0``
+* Changed ``sass``to ``1.26.10``
+
 ## [v1.3.2 (2020-06-25)](https://github.com/sass-collective/sass-breakpoint/compare/v1.3.1...v1.3.2)
 
 ### Changed
