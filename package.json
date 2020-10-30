@@ -9,7 +9,7 @@
     },
     "dependencies": {
         "@sass-collective/strip-unit": "^1.2.0",
-        "sass": "^1.26.10"
+        "sass": "^1.28.0"
     },
     "files": [
         "*.scss"
