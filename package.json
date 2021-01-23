@@ -8,7 +8,7 @@
         "npm": ">=6.0.0"
     },
     "dependencies": {
-        "@sass-collective/strip-unit": "^1.2.0",
+        "@sass-collective/strip-unit": "^2.0.0",
         "sass": "^1.28.0"
     },
     "files": [
