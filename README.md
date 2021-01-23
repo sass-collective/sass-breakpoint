@@ -6,6 +6,8 @@
 [![Download](https://flat.badgen.net/npm/dt/@sass-collective/sass-breakpoint)](https://www.npmjs.com/package/@sass-collective/sass-breakpoint)
 [![License](https://flat.badgen.net/npm/license/@sass-collective/sass-breakpoint)](https://www.npmjs.com/package/@sass-collective/sass-breakpoint)
 
+> **DEPRECATED:** This package has been moved to this [location](https://github.com/sass-collective/sass-collective/tree/master/packages/breakpoint), the current repo is no more maintained.
+
 ## Introduction
 
 Generate CSS breakpoint.
